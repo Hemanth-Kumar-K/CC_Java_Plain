@@ -10,5 +10,8 @@ COPY . /app
 # Compile the Java application
 RUN javac Main.java
 
+# Expose port 4000 to the outside world
+EXPOSE 4000
+
 # Run the Java application
 CMD ["java", "Main"]
